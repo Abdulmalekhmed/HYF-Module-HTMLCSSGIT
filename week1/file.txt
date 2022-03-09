@@ -1,14 +1,23 @@
-1-creat a hidden file or folder
-  by adding dot before the name of that file  " .file-name"
-   -you can display the file by using the command ls -a
-   
-------------- ----------------------- ----------
- 2- creat multiple nested directories
-  you can usse the -p 
-      - mkdir -p  this/folders/are/just/for/fun
------------------ ---------------------- -------------
-3- append
-    you can use the following
-     creat a file  echo "the first message" > file name...
-       
-      apand this  echo "the second message" >> file name......
+Q1: How to creat hidden file or folder ?
+
+ you can do that by putting  a dot infornt of the file/folder you want to hidde
+              mkdir .secretfolder
+              touch .secretfile.txt 
+
+you can dislay this hidden file/folder bye 
+         
+                  ls -a
+
+
+
+Q2: I use -p option to create multiple nested directories.
+
+                mkdir -p hello/this/code/are/for/fun
+
+Q3: How do I append a message to a file, without a newline charachter, so the output would be: 
+first message
+second message 
+ first I creat  a file touch  file.txt 
+                              echo  first message > file.txt
+                               echo second message >> file.txt
+To display I can use          cat file.txt  
