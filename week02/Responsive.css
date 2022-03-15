@@ -1,3 +1,4 @@
+
 *{
     padding: 0px;
     margin: 0px;
@@ -176,7 +177,7 @@ main .main-left img{
 }
 .main-right .left-btn{
 color: #fff;
-margin-top: 1.1rem;
+margin-top: 1rem;
 background-color: blue;
 padding: 15px 30px;
 border-radius: 3px;
@@ -486,7 +487,7 @@ line-height: 1.5rem;
 }   
 
 
-@media (max-width:651px){
+@media (max-width:650px){
     
     main .main-left img{
         display: none;
@@ -516,4 +517,5 @@ line-height: 1.5rem;
         grid-template-columns: 1fr;
     }
     
+
 }
