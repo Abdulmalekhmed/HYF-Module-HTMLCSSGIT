@@ -72,6 +72,7 @@ nav .search i {
 }
 nav ul {
     display: flex;
+    flex-shrink: 0;
    
 }
 nav ul li {
@@ -95,15 +96,18 @@ nav ul .nav-btn:hover {
     text-decoration: none;
     color: #fff;
 } 
-nav .btn:hover+.inner{
+
+nav .btn:hover ~ .inner, .inner:hover {
     display: flex;
    flex-direction: column;
     background-color: #fff;
    background-color: rgb(127, 127, 158);
     color: blue;
-    opacity: 1;
+    display: block;
    
 }
+
+
 
 .inner{
     position: absolute;
@@ -112,7 +116,7 @@ nav .btn:hover+.inner{
     width: 280px;
     height: 100vh;
     overflow-y: scroll;
-    opacity: 0;
+    display: none;
 }
 .inner h3, .inner ul{
 margin-bottom: 2.5rem;
@@ -352,9 +356,7 @@ line-height: 1.5rem;
   height: 2rem;
     
 }
-.hum-menu{
-    display: none;
-}
+
 @media (max-width:1040px){
   nav{
     overflow: hidden;
@@ -369,14 +371,14 @@ line-height: 1.5rem;
         
     }
     
-    
+    .inner
     
       .menu-btn{
         font-size: 1.5rem;
         cursor: pointer;
         z-index: 111111;
       }
-      
+   /*   
       .sidebar{
         position: fixed;
       background-color: #8d8888;
