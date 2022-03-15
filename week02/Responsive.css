@@ -359,20 +359,34 @@ line-height: 1.5rem;
 
 @media (max-width:1040px){
   nav{
-    overflow: hidden;
+   
+   position: relative;
+   
   }
     
    nav .btn, nav ul {
      display: none;
    }
-    
+    main{
+        z-index: -1;
+    }
   .menu-btn{ 
         display: block;
         
     }
     
-    .inner
-    
+    .inner{
+        display: block;
+        position: absolute;
+        top: -100%;
+        width: 100%;
+        left: -100%;
+        margin-top: 95px;
+        transition: all .5s ease-in-out;
+    }
+    #btn:checked ~ .inner{
+        left: 0;
+    }
       .menu-btn{
         font-size: 1.5rem;
         cursor: pointer;
