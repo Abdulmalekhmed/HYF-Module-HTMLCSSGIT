@@ -21,7 +21,7 @@ ul li{
 #check{
     display: none;
 }
-.hum-menu {
+.menu-btn {
     display: none;
 }
 
@@ -364,7 +364,7 @@ line-height: 1.5rem;
      display: none;
    }
     
-  .hum-menu{ 
+  .menu-btn{ 
         display: block;
         
     }
